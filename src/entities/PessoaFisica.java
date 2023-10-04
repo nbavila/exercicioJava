@@ -32,7 +32,7 @@ public class PessoaFisica extends Dados {
             // Se a renda anual for menor que $20000, a taxa é de 15% da renda anual
             return super.getRendaAnual() * 15.0 / 100.0;
         } else {
-            // Se a renda anual for maior ou igual a $2000, a taxa é de 25% da renda anual
+            // Se a renda anual for maior ou igual a $20000, a taxa é de 25% da renda anual
             // menos 50% dos gastos com saúde
             return (super.getRendaAnual() * 25.0 / 100.0) - (getGastoSaude() * 50.0 / 100.0);
         }
