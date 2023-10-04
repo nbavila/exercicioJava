@@ -28,8 +28,8 @@ public class PessoaFisica extends Dados {
     // Método que calcula o total de impostos a serem pagos pela pessoa física
     @Override
     public Double total() {
-        if (getRendaAnual() < 2000.0) {
-            // Se a renda anual for menor que $2000, a taxa é de 15% da renda anual
+        if (getRendaAnual() < 20000.0) {
+            // Se a renda anual for menor que $20000, a taxa é de 15% da renda anual
             return super.getRendaAnual() * 15.0 / 100.0;
         } else {
             // Se a renda anual for maior ou igual a $2000, a taxa é de 25% da renda anual
